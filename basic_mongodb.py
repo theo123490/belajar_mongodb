@@ -3,7 +3,7 @@ from random import randint
 from pprint import pprint
 
 #Step 1: Connect to MongoDB - Note: Change connection string as needed
-client = MongoClient('mongodb+srv://theo:pass12345@cluster0-8upze.mongodb.net/test?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://id:pass@cluster0-8upze.mongodb.net/test?retryWrites=true&w=majority')
 db=client.bussiness
 print(db)
 

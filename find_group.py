@@ -2,10 +2,9 @@ from pymongo import MongoClient
 from pprint import pprint
 
 #Step 1: Connect to MongoDB - Note: Change connection string as needed
-client = MongoClient('mongodb+srv://theo:pass12345@cluster0-8upze.mongodb.net/test?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://id:pass@cluster0-8upze.mongodb.net/test?retryWrites=true&w=majority')
 
 db=client.bussiness
-
 # Showcasing the count() method of find, count the total number of 5 ratings 
 print('The number of 5 star reviews:')
 fivestarcount = db.reviews.find({'rating': 5}).count()
